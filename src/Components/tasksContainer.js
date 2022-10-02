@@ -8,7 +8,7 @@ const TasksContainer = ({ socket }) => {
 
 	useEffect(() => {
 		function fetchTasks() {
-			fetch("http://localhost:4000/api")
+			fetch("https://node-kanban-cnc.herokuapp.com/api")
 				.then((res) => res.json())
 				.then((data) => setTasks(data));
 		}

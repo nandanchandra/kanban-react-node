@@ -5,7 +5,7 @@ import socketIO from "socket.io-client";
 
 import "../css/comments.css";
 
-const socket = socketIO.connect("http://localhost:4000");
+const socket = socketIO.connect("https://node-kanban-cnc.herokuapp.com");
 
 const Comments = () => {
 	const { category, id } = useParams();

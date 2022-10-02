@@ -6,7 +6,7 @@ import Nav from "./navbar";
 import AddTask from "./addTasks";
 import TasksContainer from "./tasksContainer";
 
-const socket = socketIO.connect("http://localhost:4000");
+const socket = socketIO.connect("https://node-kanban-cnc.herokuapp.com");
 
 const Task = () => {
 	return (
