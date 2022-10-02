@@ -2,11 +2,11 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const http = require("http").Server(app);
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 const socketIO = require("socket.io")(http, {
 	cors: {
-		origin: "https://lighthearted-bombolone-f24975.netlify.app",
+		origin: "https://lighthearted-bombolone-f24975.netlify.app/",
 	},
 });
 
